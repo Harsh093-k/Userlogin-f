@@ -22,7 +22,7 @@ const ForgotPassword = () => {
     const handleSendOTP = async () => {
         try {
             setLoading(true);
-            const res = await axios.post("https://userlogin-4y76.onrender.com/api/v1/user/send-otp", {
+            const res = await axios.post("https://userlogin-b.onrender.com/api/v1/user/send-otp", {
                 email: input.email
             });
             if (res.data.success) {
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
 
         try {
             setLoading(true);
-            const res = await axios.put("https://userlogin-4y76.onrender.com/api/v1/user/forgot-password", {
+            const res = await axios.put("https://userlogin-b.onrender.com/api/v1/user/forgot-password", {
                 email: input.email,
                 otp: input.otp,
                 newPassword: input.password
