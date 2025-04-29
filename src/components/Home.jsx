@@ -10,7 +10,7 @@ const Home = () => {
                 <div className="space-x-6">
                     <Link to="/" className="hover:text-purple-400">Home</Link>
                     <Link to="/games" className="hover:text-purple-400">Games</Link>
-                    <Link to="/login" className="hover:text-purple-400">Login</Link>
+                    <Link to="/login" className="hover:text-purple-400">Logout</Link>
                     <Link to="/signup" className="hover:text-purple-400">Signup</Link>
                 </div>
             </nav>
@@ -30,7 +30,13 @@ const Home = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {['Adventure', 'Bgmi', 'free fire'].map((game, index) => (
                         <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
-                            <img src={`https://source.unsplash.com/random/400x250?sig=${index}&${game}`} alt={game} className="rounded mb-4 w-full h-48 object-cover" />
+                           
+                           <img
+  src={`https://source.unsplash.com/400x250/?${game}&sig=${index}`}
+  alt={game}
+  className="rounded mb-4 w-full h-48 object-cover"
+/>
+
                             <h4 className="text-xl font-semibold mb-2">{game}</h4>
                             <p className="text-gray-400">Jump into action with {game}. Fast-paced gameplay and endless fun await!</p>
                         </div>
