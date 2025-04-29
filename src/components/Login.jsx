@@ -57,7 +57,7 @@ const Login = () => {
 
                 <div>
                     <label className="block mb-1 font-medium">Password</label>
-                    <Link to="/forgot-password"><label className="block right-10 font-medium">Forgot Password ?</label></Link>
+{/*                     <Link to="/forgot-password"><label className="block right-10 font-medium">Forgot Password ?</label></Link> */}
                     <input
                         type="password"
                         name="password"
